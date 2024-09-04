@@ -180,7 +180,6 @@ public class CrptApi {
         document.setParticipantInn("987654321");
         document.setProducerInn("456123789");
 
-        // Устанавливаем дату как строку через сеттеры
         document.setProductionDate(LocalDate.of(2023, 1, 23).format(formatter));
         document.setProductionType("type1");
         document.setRegDate(LocalDate.of(2023, 1, 25).format(formatter));
@@ -189,7 +188,6 @@ public class CrptApi {
         Document.Product product = new Document.Product();
         product.setCertificateDocument("cert123");
 
-        // Преобразуем даты в строки через сеттеры
         product.setCertificateDocumentDate(LocalDate.of(2023, 1, 20).format(formatter));
         product.setCertificateDocumentNumber("cert12345");
         product.setOwnerInn("123456789");
